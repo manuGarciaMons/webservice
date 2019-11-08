@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.com/">
+
+<xs:element name="Area" type="tns:Area" />
+
+<xs:element name="AreaResponse" type="tns:AreaResponse" />
+
+<xs:element name="triangulo" type="tns:triangulo" />
+
+<xs:element name="trianguloResponse" type="tns:trianguloResponse" />
+
+<xs:complexType name="triangulo">
+<xs:sequence>
+<xs:element name="a" type="xs:int" />
+<xs:element name="b" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="trianguloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Area">
+<xs:sequence>
+<xs:element name="radio" type="xs:double" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AreaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
